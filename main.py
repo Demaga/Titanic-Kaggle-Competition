@@ -24,6 +24,7 @@ from sklearn import model_selection
 from sklearn import metrics
 
 # Visualization
+#import plotly
 #import matplotlib as mpl
 #import matplotlib.pyplot as plt
 #import matplotlib.pylab as pylab
@@ -226,10 +227,8 @@ for alg in MLA:
 MLA_compare.sort_values(by = ['MLA Test Accuracy Mean'], ascending = False, inplace = True)
 print("************************************")
 print(tabulate(MLA_compare[["MLA Name", "MLA Test Accuracy Mean", "MLA Time"]], headers='keys', tablefmt='psql'))
-# Костя, запусти код. Теперь всё красиво :)
-# чат так нашёл)))
-# вот мы и получили кароче базовый результат ~81.6% точности. Теперь надо подтянуть эти же модели до более высокой точности. Если набьем 85%+, уже и выкладывать будет не стыдно)
-# Топ результат - 89%, насколько я знаю 
 
+# best accuracy: 81.6 %
+# work is still in progress
 
 
